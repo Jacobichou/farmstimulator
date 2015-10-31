@@ -12,6 +12,11 @@
     "express": "~4.13.1",
     "jade": "~1.11.0",
     "morgan": "~1.6.1",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
     "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "babelify": "^6.4.0"
   }
 }
