@@ -19030,7 +19030,7 @@ var IssueList = React.createClass({
         return React.createElement(
             'div',
             { className: 'issueList' },
-            React.createElement(IssueCard, { butt: 'Buttholes' })
+            React.createElement(IssueCard, { textStuff: 'I am text!' })
         );
     }
 });
@@ -19042,7 +19042,7 @@ var IssueCard = React.createClass({
         return React.createElement(
             'div',
             { className: 'issueCard' },
-            this.props.butt
+            this.props.textStuff
         );
     }
 });

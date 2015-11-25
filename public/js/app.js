@@ -15,7 +15,7 @@ var IssueList = React.createClass({
     render: function () {
         return (
             <div className="issueList">
-                <IssueCard butt="Buttholes"></IssueCard>
+                <IssueCard textStuff="I am text!"></IssueCard>
             </div>
         );
     }
@@ -24,7 +24,7 @@ var IssueList = React.createClass({
 var IssueCard = React.createClass({
     render: function () {
         return (
-            <div className="issueCard">{this.props.butt}</div>
+            <div className="issueCard">{this.props.textStuff}</div>
         );
     }
 });
