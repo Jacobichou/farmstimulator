@@ -19011,10 +19011,42 @@ module.exports = require('./lib/React');
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-ReactDOM.render(React.createElement(
-    'h1',
-    null,
-    'I <3 Mercedes :) do hr in da booty'
-), document.getElementById("content"));
+var IssueBox = React.createClass({
+    displayName: 'IssueBox',
+
+    render: function render() {
+        return React.createElement(
+            'div',
+            { className: 'issueBox' },
+            React.createElement(IssueList, null)
+        );
+    }
+});
+
+var IssueList = React.createClass({
+    displayName: 'IssueList',
+
+    render: function render() {
+        return React.createElement(
+            'div',
+            { className: 'issueList' },
+            React.createElement(IssueCard, { butt: 'Buttholes' })
+        );
+    }
+});
+
+var IssueCard = React.createClass({
+    displayName: 'IssueCard',
+
+    render: function render() {
+        return React.createElement(
+            'div',
+            { className: 'issueCard' },
+            this.props.butt
+        );
+    }
+});
+
+ReactDOM.render(React.createElement(IssueBox, null), document.getElementById("content"));
 
 },{"react":158,"react-dom":2}]},{},[159]);
