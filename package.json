@@ -1,6 +1,7 @@
 {
-  "name": "oscar",
-  "version": "0.0.0",
+  "name": "farmerstimulator",
+  "description": "Help stimulate all the farmers.",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
